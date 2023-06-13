@@ -1,0 +1,8 @@
+.btn{
+    padding:$pd-1;
+    @include style-text($fs1, $fw1,$color-3);
+   &:hover{
+    color: $color-5;
+    
+}
+}

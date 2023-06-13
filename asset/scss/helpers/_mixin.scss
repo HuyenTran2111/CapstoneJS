@@ -1,0 +1,16 @@
+@mixin style-text($fs, $fw, $color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color ;
+  }
+
+  @mixin flex($fl, $ait, $jute) {
+    display: $fl;
+    align-items: $ait;
+    justify-content: $jute;
+  }
+  @mixin flex-w($fl, $jute, $w) {
+    display: $fl;
+    justify-content: $jute;
+    width: $w;
+  }
