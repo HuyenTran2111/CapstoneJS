@@ -1,9 +1,10 @@
 # CapstoneJS
+
 Team Size: 2 <br>
 Team members:
 
-- Phan Quang Đức
-- Đỗ Thị Huyền Trân
+- Phan Quang Đức: ( Client-side + Deploy )
+- Đỗ Thị Huyền Trân: ( Back-end + video )
 
 We are using Cyber Phone Layout for this Project.
 
