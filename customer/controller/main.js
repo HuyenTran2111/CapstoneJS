@@ -171,10 +171,36 @@ const checkStatus = (val) => {
   return txtStatus;
 };
 
+const renderOption = async () => {
+  let content = "";
+  let fullList = "<option value='all'>All Brands</option>";
+  let typeArr = [];
+  const result = await api.callApi("Phone", "GET", null);
+  if (result.status === 200 && result.statusText === "OK") {
+    //success
+    let typeList = result.data;
+    typeList.forEach((type) => typeArr.push(type.type));
+
+    if (typeArr.length > 0) {
+      let uniqueType = typeArr.filter((element, index) => {
+        return typeArr.indexOf(element) === index;
+      });
+      console.log(uniqueType);
+      uniqueType.forEach(
+        (type) => (content += `<option value="${type}">${type}</option>`)
+      );
+    }
+    fullList = `${fullList}${content}`;
+    getEle("selectList").innerHTML = fullList;
+  }
+};
+
+renderOption();
+
 getEle("selectList").addEventListener("change", async () => {
   const value = getEle("selectList").value;
 
-  const result = await api.callApi("product", "GET", null);
+  const result = await api.callApi("Phone", "GET", null);
   if (result.status === 200 && result.statusText === "OK") {
     //success
     let mangTimKiem = result.data;
