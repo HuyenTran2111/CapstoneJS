@@ -71,6 +71,18 @@
                     Add Phone
                 </button>
             </div>
+            <br>
+            <div class="tangGiam" style="text-align: right;">
+                <button class="btn btn-success" id="btnIncrease">Increase</button>
+                <button class="btn btn-success" id="btnDecrease">Decrease</button>
+            </div>
+            <br>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" id="searchName">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="btnSearchPhone"><i class="fa fa-search"></i></span>
+                </div>
+            </div>
         </div>
 
         <div class="tblProducts  table-responsive" id="tblProducts">
@@ -239,43 +251,42 @@
                         <input id="name" class="form-control" placeholder="Phone name" />
                         <div id="errorName" class="text-danger" style="display: none">
                         </div>
-                        <span class="sp-thongbao" id="tbName"></span>
+
                     </div>
                     <div class="form-group">
-                        <input id="price" class="form-control" placeholder="Price" />
+                        <input id="price" class="form-control" placeholder="Price" type="number" />
                         <div id="errorPrice" class="text-danger" style="display: none">
                         </div>
-                        <span class="sp-thongbao" id="tbprice"></span>
                     </div>
+
                     <div class="form-group">
                         <input id="screen" class="form-control" placeholder="Screen" />
                         <div id="errorScreen" class="text-danger" style="display: none">
                         </div>
-                        <span class="sp-thongbao" id="tbscreen"></span>
                     </div>
                     <div class="form-group">
                         <input id="backCam" class="form-control" placeholder="Back Camera" />
                         <div id="errorBackCam" class="text-danger" style="display: none">
                         </div>
-                        <span class="sp-thongbao" id="tbbackCam"></span>
+
                     </div>
                     <div class="form-group">
                         <input id="frontCam" class="form-control" placeholder="Front Camera" />
                         <div id="errorFrontCam" class="text-danger" style="display: none">
                         </div>
-                        <span class="sp-thongbao" id="tbfrontCam"></span>
+
                     </div>
                     <div class="form-group">
                         <input id="img" class="form-control" placeholder="Image link" />
                         <div id="errorImg" class="text-danger" style="display: none">
                         </div>
-                        <span class="sp-thongbao" id="tbimg"></span>
+
                     </div>
                     <div class="form-group">
                         <input id="desc" class="form-control" placeholder="Description" />
                         <div id="errorDesc" class="text-danger" style="display: none">
                         </div>
-                        <span class="sp-thongbao" id="tbdesc"></span>
+
                     </div>
                     <div class="form-group">
                         <select class="form-control" id="type">
@@ -285,12 +296,12 @@
                         </select>
                         <div id="errorType" class="text-danger" style="display: none">
                         </div>
-                        <span class="sp-thongbao" id="tbtype"></span>
+
                     </div>
                 </div>
                 <!-- Modal footer -->
                 <div class="modal-footer">
-                    
+
                 </div>
             </div>
         </div>
@@ -328,12 +339,14 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-        <!-- axios -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+        integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <!-- controllers -->
-  <script type="module" src="../controller/controller.js"></script>
-  
+    <!-- controllers -->
+    <script type="module" src="../controller/controller.js"></script>
+
 </body>
 
 </html>
