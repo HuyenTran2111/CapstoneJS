@@ -1,0 +1,49 @@
+#mainpage {
+    background-image: url(../../../asset/img/bg.jpg);
+    background-size: cover;
+}
+
+#page{
+    margin-top: $mg-t-1;
+
+    a {
+        text-decoration: none;
+    }
+
+    .home {
+        width: $w-1;
+        height: $h-2;
+        border-radius: 75px;
+        background: $color-2;
+
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        @include flex($fl1, $ait1, $jute1);
+
+        margin: $mg-1;
+
+    }
+
+    h1 {
+        @include style-text($fs2, $fw1, $color-3) ;
+        &::after {
+            content: '';
+            display: block;
+            width: $w-2;
+            height: $h-1;
+            background-color: $color-4;
+            transform: scaleX(0);
+            transition: 0.3s;
+        }
+
+        &:hover {
+            color: $color-4;
+
+            &::after {
+                transform: scaleX(0.5);
+            }
+        }
+
+    }
+}
